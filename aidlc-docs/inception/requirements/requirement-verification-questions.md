@@ -1,81 +1,83 @@
 # Requirements Verification Questions
 
-기존 요구사항 문서(table-order-requirements.md, constraints.md)를 분석했습니다.
-기능 요구사항은 상세하게 정의되어 있으나, 기술적 결정과 비기능 요구사항에 대해 확인이 필요합니다.
-
-각 질문의 [Answer]: 태그 뒤에 선택한 알파벳을 입력해주세요.
+기존 요구사항 문서(`requirements/table-order-requirements.md`, `requirements/constraints.md`)를 분석한 결과, 아래 항목들에 대한 확인이 필요합니다.
+각 질문의 `[Answer]:` 태그 뒤에 선택지 알파벳을 입력해 주세요.
 
 ---
 
 ## Question 1
-백엔드 프레임워크로 어떤 기술을 사용하시겠습니까?
+백엔드 기술 스택으로 어떤 것을 사용하시겠습니까?
 
-A) Node.js + Express
-B) Node.js + NestJS
-C) Python + FastAPI
-D) Java + Spring Boot
+A) Java + Spring Boot
+B) Node.js + Express/NestJS
+C) Python + FastAPI/Django
+D) Go + Gin/Echo
 E) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ## Question 2
-프론트엔드 프레임워크로 어떤 기술을 사용하시겠습니까?
+프론트엔드 기술 스택으로 어떤 것을 사용하시겠습니까?
 
-A) React (Vite)
-B) Next.js
-C) Vue.js
-D) Other (please describe after [Answer]: tag below)
+A) React (JavaScript/TypeScript)
+B) Vue.js
+C) Next.js (React 기반 풀스택)
+D) Angular
+E) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 3
-데이터베이스로 어떤 기술을 사용하시겠습니까?
+데이터베이스로 어떤 것을 사용하시겠습니까?
 
 A) PostgreSQL
 B) MySQL
-C) SQLite (개발/MVP용 경량 DB)
-D) DynamoDB (AWS NoSQL)
+C) DynamoDB (AWS NoSQL)
+D) MongoDB
 E) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 4
-프로젝트 아키텍처 구조를 어떻게 구성하시겠습니까?
-
-A) 모노레포 (프론트엔드 + 백엔드를 하나의 저장소에서 관리)
-B) 분리된 저장소 (프론트엔드와 백엔드를 별도 프로젝트로 관리)
-C) Other (please describe after [Answer]: tag below)
-
-[Answer]: 
-
-## Question 5
-배포 환경은 어디를 대상으로 하시겠습니까?
+배포 환경은 어떻게 계획하고 계십니까?
 
 A) AWS (EC2, ECS, Lambda 등)
-B) 로컬 서버 / 온프레미스
-C) Docker 컨테이너 (배포 환경 미정, 컨테이너화만 우선)
+B) 로컬 개발 환경만 (Docker Compose 등)
+C) Kubernetes (EKS, 자체 클러스터)
+D) 서버리스 (AWS Lambda + API Gateway)
+E) Other (please describe after [Answer]: tag below)
+
+[Answer]: B
+
+## Question 5
+메뉴 이미지 관리 방식은 어떻게 하시겠습니까? (요구사항에 이미지 URL 언급)
+
+A) 외부 이미지 URL 직접 입력 (별도 업로드 없음)
+B) S3 등 클라우드 스토리지에 업로드
+C) 서버 로컬 파일 시스템에 업로드
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C
 
 ## Question 6
-프로그래밍 언어 타입 시스템 선호도는 어떻게 되시나요? (JavaScript 기반 선택 시)
+관리자 계정 관리 방식은 어떻게 하시겠습니까?
 
-A) TypeScript (정적 타입, 권장)
-B) JavaScript (동적 타입)
-C) 해당 없음 (JavaScript 기반이 아닌 기술 스택 선택)
+A) 사전 설정된 관리자 계정 (DB 시드 데이터)
+B) 관리자 회원가입 기능 포함
+C) 환경 변수로 초기 관리자 설정 후 관리자 페이지에서 추가
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 7
-관리자용 메뉴 관리 기능이 MVP 범위에 포함되어야 합니까? (요구사항 정의서 3.2.4에 정의되어 있으나 MVP 범위(섹션 4)에는 명시되지 않았습니다)
+동시 접속 규모는 어느 정도를 예상하십니까? (NFR 판단 기준)
 
-A) Yes — MVP에 메뉴 관리(CRUD) 포함
-B) No — MVP에서는 제외하고 시드 데이터로 메뉴 제공
-C) Other (please describe after [Answer]: tag below)
+A) 소규모 — 단일 매장, 테이블 10개 이하
+B) 중규모 — 단일 매장, 테이블 10~50개
+C) 대규모 — 다중 매장, 테이블 50개 이상
+D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: A
 
 ## Question 8: Security Extensions
 Should security extension rules be enforced for this project?
@@ -84,7 +86,7 @@ A) Yes — enforce all SECURITY rules as blocking constraints (recommended for p
 B) No — skip all SECURITY rules (suitable for PoCs, prototypes, and experimental projects)
 C) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: B
 
 ## Question 9: Property-Based Testing Extension
 Should property-based testing (PBT) rules be enforced for this project?
@@ -94,4 +96,4 @@ B) Partial — enforce PBT rules only for pure functions and serialization round
 C) No — skip all PBT rules (suitable for simple CRUD applications, UI-only projects, or thin integration layers with no significant business logic)
 D) Other (please describe after [Answer]: tag below)
 
-[Answer]: 
+[Answer]: C

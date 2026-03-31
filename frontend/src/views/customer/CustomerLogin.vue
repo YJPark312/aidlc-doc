@@ -49,7 +49,7 @@ async function handleLogin() {
 .login-page h1 { font-size: 2rem; margin-bottom: 2rem; }
 .login-form { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 320px; }
 .login-form input { padding: 12px; font-size: 1rem; border: 1px solid #ddd; border-radius: 8px; }
-.login-form button { padding: 14px; font-size: 1.1rem; background: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.login-form button { padding: 14px; font-size: 1.1rem; background: var(--kb-yellow); color: var(--kb-brown); border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
 .login-form button:disabled { background: #ccc; }
 .error { color: #e53935; text-align: center; }
 </style>

@@ -94,17 +94,17 @@ function closeResult() { router.push('/customer/menu') }
 .cart-item { display: flex; align-items: center; padding: 12px; background: white; border-radius: 10px; margin-bottom: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
 .item-info { flex: 1; }
 .item-info h3 { margin: 0 0 4px; font-size: 1rem; }
-.item-info p { margin: 0; color: #4CAF50; font-weight: bold; }
+.item-info p { margin: 0; color: var(--kb-dark-yellow); font-weight: bold; }
 .qty-controls { display: flex; align-items: center; gap: 10px; margin: 0 12px; }
 .qty-controls button { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #ddd; background: #f5f5f5; font-size: 1.2rem; cursor: pointer; }
 .qty-controls span { font-size: 1.1rem; min-width: 20px; text-align: center; }
 .remove-btn { background: none; border: none; font-size: 1.2rem; color: #999; cursor: pointer; }
 .cart-footer { position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 16px; border-top: 1px solid #eee; display: flex; align-items: center; gap: 16px; }
 .total { font-size: 1.2rem; font-weight: bold; flex: 1; }
-.order-btn { padding: 14px 32px; background: #4CAF50; color: white; border: none; border-radius: 10px; font-size: 1.1rem; cursor: pointer; }
+.order-btn { padding: 14px 32px; background: var(--kb-yellow); color: var(--kb-brown); border: none; border-radius: 10px; font-size: 1.1rem; font-weight: bold; cursor: pointer; }
 .order-btn:disabled { background: #ccc; }
 .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 100; }
 .modal { background: white; padding: 32px; border-radius: 16px; text-align: center; min-width: 280px; }
-.modal h2 { color: #4CAF50; }
+.modal h2 { color: var(--kb-dark-yellow); }
 .error { color: #e53935; text-align: center; padding: 12px; }
 </style>

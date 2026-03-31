@@ -51,4 +51,5 @@ class OrderRepository:
         items = await self.get_order_items(order.id)
         for item in items:
             await self.db.delete(item)
+        await self.db.flush()
         await self.db.delete(order)

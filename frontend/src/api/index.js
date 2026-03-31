@@ -1,6 +1,6 @@
 // API adapter - switch between mock and real backend
 // Change this flag to false (or use env var) when backend is ready
-const USE_MOCK = true
+const USE_MOCK = false
 
 const api = USE_MOCK
   ? await import('./mock/index.js')

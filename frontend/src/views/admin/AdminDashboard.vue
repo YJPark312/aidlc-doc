@@ -120,26 +120,26 @@ onUnmounted(() => { unsubscribe?.() })
 </script>
 
 <style scoped>
-.dashboard { min-height: 100vh; background: #f5f5f5; }
-.top-bar { display: flex; align-items: center; padding: 12px 20px; background: #1565C0; color: white; flex-wrap: wrap; gap: 8px; }
+.dashboard { min-height: 100vh; background: var(--kb-bg); }
+.top-bar { display: flex; align-items: center; padding: 12px 20px; background: var(--kb-brown); color: white; flex-wrap: wrap; gap: 8px; }
 .top-bar .title { font-size: 1.2rem; font-weight: bold; flex: 1; }
 .nav-links { display: flex; gap: 12px; align-items: center; }
-.nav-links a { color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; background: rgba(255,255,255,0.15); }
+.nav-links a { color: white; text-decoration: none; padding: 6px 12px; border-radius: 6px; background: rgba(255,188,0,0.2); }
 .logout-btn { background: rgba(255,255,255,0.2); color: white; border: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
 .table-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; padding: 20px; }
 .table-card { background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-.table-card.has-orders { border-left: 4px solid #4CAF50; }
+.table-card.has-orders { border-left: 4px solid var(--kb-yellow); }
 .table-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
 .table-num { font-weight: bold; font-size: 1.1rem; }
-.table-total { color: #4CAF50; font-weight: bold; }
+.table-total { color: var(--kb-dark-yellow); font-weight: bold; }
 .mini-order { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; margin-bottom: 4px; border-radius: 6px; font-size: 0.9rem; background: #fafafa; }
-.mini-order.pending { background: #FFF3E0; }
-.mini-order.preparing { background: #E3F2FD; }
+.mini-order.pending { background: #FFF8E1; }
+.mini-order.preparing { background: #FFF3E0; }
 .mini-order.completed { background: #E8F5E9; }
 .mini-order.new-order { animation: pulse 1s ease-in-out 3; }
-@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); box-shadow: 0 0 8px rgba(76,175,80,0.4); } }
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); box-shadow: 0 0 8px rgba(255,188,0,0.5); } }
 .status-btns button { padding: 4px 8px; border: none; border-radius: 4px; cursor: pointer; font-size: 0.8rem; color: white; }
-.btn-prep { background: #1565C0; }
+.btn-prep { background: var(--kb-yellow); color: var(--kb-brown); }
 .btn-done { background: #2E7D32; }
 .btn-del { background: #e53935; color: white; padding: 4px 8px; border: none; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
 .no-orders { color: #999; font-size: 0.9rem; padding: 8px 0; }
@@ -155,7 +155,7 @@ onUnmounted(() => { unsubscribe?.() })
 .status-tag.preparing { background: #E3F2FD; color: #1565C0; }
 .status-tag.completed { background: #E8F5E9; color: #2E7D32; }
 .detail-item { font-size: 0.9rem; padding: 2px 0; }
-.detail-total { font-weight: bold; text-align: right; margin-top: 6px; color: #4CAF50; }
+.detail-total { font-weight: bold; text-align: right; margin-top: 6px; color: var(--kb-dark-yellow); }
 .detail-actions { display: flex; gap: 6px; margin-top: 8px; }
 .detail-actions button { font-size: 0.85rem; }
 .btn-close { width: 100%; padding: 10px; margin-top: 12px; background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; }

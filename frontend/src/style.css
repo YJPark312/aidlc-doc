@@ -1,4 +1,12 @@
+:root {
+  --kb-yellow: #FFBC00;
+  --kb-dark-yellow: #F5A200;
+  --kb-brown: #4A3728;
+  --kb-warm-gray: #998E7E;
+  --kb-light-yellow: #FFF8E1;
+  --kb-bg: #FFFDF5;
+}
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f9f9f9; color: #333; -webkit-font-smoothing: antialiased; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--kb-bg); color: #333; -webkit-font-smoothing: antialiased; }
 a { color: inherit; }
 button { font-family: inherit; }

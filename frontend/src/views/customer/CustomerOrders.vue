@@ -59,10 +59,10 @@ onMounted(async () => {
 .order-id { font-weight: bold; font-size: 1.1rem; }
 .status { padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: bold; }
 .status.pending { background: #FFF3E0; color: #E65100; }
-.status.preparing { background: #E3F2FD; color: #1565C0; }
+.status.preparing { background: #E3F2FD; color: var(--kb-brown); }
 .status.completed { background: #E8F5E9; color: #2E7D32; }
 .order-time { font-size: 0.85rem; color: #999; margin-bottom: 10px; }
 .order-items { border-top: 1px solid #f0f0f0; padding-top: 8px; }
 .order-item { display: flex; justify-content: space-between; padding: 4px 0; font-size: 0.95rem; }
-.order-total { border-top: 1px solid #f0f0f0; padding-top: 8px; margin-top: 8px; font-weight: bold; text-align: right; color: #4CAF50; }
+.order-total { border-top: 1px solid #f0f0f0; padding-top: 8px; margin-top: 8px; font-weight: bold; text-align: right; color: var(--kb-dark-yellow); }
 </style>

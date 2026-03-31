@@ -37,4 +37,4 @@
 - [ ] NFR Design
 - [ ] Infrastructure Design
 - [ ] Code Generation
-- [ ] Build and Test
+- [x] Build and Test

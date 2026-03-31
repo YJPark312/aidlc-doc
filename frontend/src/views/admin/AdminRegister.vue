@@ -44,9 +44,9 @@ async function handleRegister() {
 .login-page h1 { margin-bottom: 2rem; }
 .login-form { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 360px; }
 .login-form input { padding: 12px; font-size: 1rem; border: 1px solid #ddd; border-radius: 8px; }
-.login-form button { padding: 14px; font-size: 1.1rem; background: #1565C0; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.login-form button { padding: 14px; font-size: 1.1rem; background: var(--kb-brown); color: white; border: none; border-radius: 8px; cursor: pointer; }
 .login-form button:disabled { background: #ccc; }
 .error { color: #e53935; text-align: center; }
-.success { color: #2E7D32; text-align: center; }
-.link { text-align: center; color: #1565C0; }
+.success { color: var(--kb-dark-yellow); text-align: center; }
+.link { text-align: center; color: var(--kb-brown); }
 </style>

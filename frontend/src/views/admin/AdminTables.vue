@@ -101,20 +101,20 @@ onMounted(load)
 
 <style scoped>
 .admin-page { min-height: 100vh; background: #f5f5f5; }
-.top-bar { display: flex; align-items: center; padding: 12px 20px; background: #1565C0; color: white; }
+.top-bar { display: flex; align-items: center; padding: 12px 20px; background: var(--kb-brown); color: white; }
 .back-btn { color: white; text-decoration: none; margin-right: 12px; }
 .title { font-size: 1.2rem; font-weight: bold; }
 .add-form { display: flex; gap: 8px; padding: 16px; background: white; margin: 16px; border-radius: 12px; flex-wrap: wrap; }
 .add-form input { padding: 10px; border: 1px solid #ddd; border-radius: 8px; flex: 1; min-width: 120px; }
-.add-form button { padding: 10px 20px; background: #1565C0; color: white; border: none; border-radius: 8px; cursor: pointer; }
+.add-form button { padding: 10px 20px; background: var(--kb-brown); color: white; border: none; border-radius: 8px; cursor: pointer; }
 .error { color: #e53935; width: 100%; }
 .table-list { padding: 0 16px; }
 .table-row { display: flex; justify-content: space-between; align-items: center; background: white; padding: 14px; border-radius: 10px; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
 .table-info { display: flex; align-items: center; gap: 12px; flex: 1; }
 .table-num { font-weight: bold; }
 .table-status { padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; background: #f5f5f5; color: #999; }
-.table-status.active { background: #E8F5E9; color: #2E7D32; }
-.table-amount { font-weight: bold; color: #4CAF50; }
+.table-status.active { background: var(--kb-light-yellow); color: var(--kb-dark-yellow); }
+.table-amount { font-weight: bold; color: var(--kb-dark-yellow); }
 .table-actions { display: flex; gap: 6px; }
 .btn-complete { padding: 6px 14px; background: #FFA726; color: white; border: none; border-radius: 6px; cursor: pointer; }
 .btn-history { padding: 6px 14px; background: #78909C; color: white; border: none; border-radius: 6px; cursor: pointer; }
@@ -125,7 +125,7 @@ onMounted(load)
 .date-filter { padding: 8px; border: 1px solid #ddd; border-radius: 6px; margin-bottom: 12px; width: 100%; }
 .history-item { border: 1px solid #eee; border-radius: 8px; padding: 10px; margin-bottom: 8px; }
 .history-header { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4px; }
-.history-amount { color: #4CAF50; }
+.history-amount { color: var(--kb-dark-yellow); }
 .history-detail { font-size: 0.9rem; color: #666; }
 .history-completed { font-size: 0.8rem; color: #999; margin-top: 4px; }
 .btn-close { width: 100%; padding: 10px; margin-top: 12px; background: #f5f5f5; border: 1px solid #ddd; border-radius: 8px; cursor: pointer; }

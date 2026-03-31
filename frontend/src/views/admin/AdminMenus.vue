@@ -84,7 +84,7 @@ onMounted(load)
 
 <style scoped>
 .admin-page { min-height: 100vh; background: #f5f5f5; }
-.top-bar { display: flex; align-items: center; padding: 12px 20px; background: #1565C0; color: white; }
+.top-bar { display: flex; align-items: center; padding: 12px 20px; background: var(--kb-brown); color: white; }
 .back-btn { color: white; text-decoration: none; margin-right: 12px; }
 .title { font-size: 1.2rem; font-weight: bold; }
 .menu-form { background: white; margin: 16px; padding: 16px; border-radius: 12px; display: flex; flex-direction: column; gap: 10px; }
@@ -92,14 +92,14 @@ onMounted(load)
 .menu-form input, .menu-form select { padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; }
 .form-actions { display: flex; gap: 8px; }
 .form-actions button { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; }
-.form-actions button:first-child { background: #1565C0; color: white; }
+.form-actions button:first-child { background: var(--kb-brown); color: white; }
 .form-actions button:last-child { background: #f5f5f5; }
 .error { color: #e53935; }
 .category-section { margin: 16px; }
 .category-section h3 { margin-bottom: 8px; }
 .menu-row { display: flex; align-items: center; gap: 10px; background: white; padding: 12px; border-radius: 8px; margin-bottom: 6px; }
 .menu-name { flex: 1; font-weight: 500; }
-.menu-price { color: #4CAF50; font-weight: bold; min-width: 80px; text-align: right; }
+.menu-price { color: var(--kb-dark-yellow); font-weight: bold; min-width: 80px; text-align: right; }
 .btn-edit { padding: 6px 12px; background: #FFA726; color: white; border: none; border-radius: 6px; cursor: pointer; }
 .btn-del { padding: 6px 12px; background: #e53935; color: white; border: none; border-radius: 6px; cursor: pointer; }
 .empty { color: #999; padding: 8px; }

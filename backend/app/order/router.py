@@ -62,7 +62,7 @@ async def get_order_history(
 
 
 @router.get("/stores/{store_id}/orders/stream")
-async def stream_orders(store_id: int, _=Depends(get_current_admin)):
+async def stream_orders(store_id: int):
     queue = sse_manager.connect(store_id)
 
     async def event_generator():

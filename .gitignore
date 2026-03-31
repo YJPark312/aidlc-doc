@@ -1,2 +1,4 @@
 audit.md
 aidlc-state.md
+__pycache__/
+*.pyc
